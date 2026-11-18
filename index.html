@@ -29,10 +29,10 @@ h2 i{font-style:normal;color:var(--sun)}
 /* hero */
 .hero{background:var(--ink);color:var(--paper);padding:0 0 34px;overflow:hidden}
 .stage{position:relative;max-width:880px;margin:0 auto}
-.stage video,.stage img.poster{display:block;width:100%;aspect-ratio:14/15;object-fit:cover}
+.stage video,.stage img.poster{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
 .stage:after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,rgba(6,10,34,0),var(--ink))}
-.title{position:relative;margin-top:-30%;z-index:2}
-h1{font-size:clamp(84px,27vw,230px);line-height:.8}
+.title{position:relative;margin-top:-33%;z-index:2}
+h1{font-size:clamp(72px,22.5vw,200px);line-height:.8}
 h1 span{display:block}
 h1 .l3{color:var(--lime);font-size:1.32em;margin-left:-.03em}
 .js h1 span{animation:drop .7s cubic-bezier(.2,1.4,.4,1) both}.js h1 .l2{animation-delay:.12s}.js h1 .l3{animation-delay:.3s;animation-duration:.9s}
@@ -89,15 +89,15 @@ details.src summary{cursor:pointer;font-weight:700;padding:12px 0;text-decoratio
 .tab[aria-pressed=true]{background:var(--sun);color:var(--paper);transform:none}
 /* tickets */
 .tix{padding-top:20px}
-.tk{display:grid;grid-template-columns:74px 1fr;background:var(--paper);border:3px solid var(--navy);margin-bottom:16px;box-shadow:6px 6px 0 var(--navy);position:relative}
+.tk{display:grid;grid-template-columns:84px 1fr;background:var(--paper);border:3px solid var(--navy);margin-bottom:16px;box-shadow:6px 6px 0 var(--navy);position:relative}
 .tk .stub{background:var(--navy);color:var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:center;border-right:3px dashed var(--paper);font:900 46px/1 "Shoulders",sans-serif;padding:8px 0}
-.tk .stub small{font:700 11px/1.1 "Instrument",sans-serif;color:var(--paper);text-align:center;padding:6px 4px 0;text-transform:none}
+.tk .stub small{font:700 13px/1.1 "Instrument",sans-serif;color:var(--paper);text-align:center;padding:6px 4px 0;text-transform:none}
 .tk.sun .stub{background:var(--sun);color:var(--paper)}.tk.lime .stub{background:var(--lime);color:var(--navy)}.tk.lime .stub small{color:var(--navy)}
 .tk .bd{padding:13px 14px 14px;min-width:0}
 .tk h3{font-size:31px;line-height:.95;text-transform:none}
 .tk .who{font-weight:700;margin:5px 0 0}.tk .loc{color:var(--grey);font-size:14.5px;margin:1px 0 8px}
 .tk .pay{font:900 23px/1.05 "Shoulders",sans-serif;background:var(--lime);display:inline;padding:1px 6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
-.tk details{margin-top:10px}.tk summary{cursor:pointer;font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;padding:6px 0}
+.tk details{margin-top:10px}.tk summary{cursor:pointer;font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;padding:11px 0;min-height:44px}
 .tk details p{margin:8px 0 0;font-size:15.5px}.tk details .r{color:var(--grey)}
 .tk .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.tk .b{font-size:19px;padding:11px 13px;min-height:46px;box-shadow:4px 4px 0 var(--navy)}
 .stamp{position:absolute;right:8px;top:-16px;z-index:2;font:900 22px/1 "Shoulders",sans-serif;color:var(--sun);border:4px solid var(--sun);padding:4px 8px;transform:rotate(9deg) scale(0);opacity:0;pointer-events:none;background:rgba(241,234,217,.86)}
@@ -137,6 +137,7 @@ h3.sub3{font-size:44px;margin:34px 0 10px;color:var(--sun)}
 .js h2.rv.in{clip-path:inset(0 0 -10% 0);transform:none}
 .js .card.rv{transform:translateY(60px) rotate(8deg)}.js .card.rv.in{transform:none}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.js .rv,.js h2.rv{opacity:1;transform:none;clip-path:none}}
+@media(max-width:350px){.back p{font-size:13.5px;line-height:1.32}.back h4{font-size:22px}}
 @media(min-width:760px){.nums{grid-template-columns:repeat(4,1fr)}.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}.hand{justify-content:center}.card{flex-basis:250px}}
 </style></head><body>
 <header class="hero"><div class="stage"><video id="film" muted playsinline preload="auto" poster="a/kit.jpg" aria-hidden="true"><source src="a/kit.mp4" type="video/mp4"></video></div>
